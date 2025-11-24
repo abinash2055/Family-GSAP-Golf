@@ -440,3 +440,97 @@ video {
   line-height: 20px;
   margin-bottom: 8px;
 }
+
+/* === MOBILE RESPONSIVE ONLY === */
+@media screen and (max-width: 1024px) {
+  /* NAVIGATION */
+  #nav {
+    padding: 0 40px;
+    gap: 20px;
+  }
+  #nav h4 {
+    font-size: 3vw;
+  }
+  #nav img {
+    height: 6vw;
+  }
+
+  /* PAGE 1 */
+  #page1 h1 { font-size: 15vw; }
+  #page1 h2 { font-size: 5vw; }
+  #page1 p { width: 80%; font-size: 3vw; }
+  #page1 #arrow { height: 120px; width: 120px; }
+  #page1 #arrow i { font-size: 30px; }
+
+  /* ABOUT US */
+  #about-us {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+  }
+  #about-us img { height: 180px; width: 180px; }
+  #about-us-in { width: 90%; }
+  #about-us-in h3 { font-size: 8vw; }
+  #about-us-in p { font-size: 3vw; line-height: 4vw; }
+
+  /* CARDS */
+  #cards-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .card { width: 90%; height: 250px; }
+  .overlay h4 { font-size: 5vw; }
+  .overlay p { font-size: 3vw; }
+
+  /* GREEN DIV */
+  #green-div {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  #green-div h4 { width: 90%; font-size: 4vw; line-height: 5vw; }
+  #green-div img { height: 50px; width: 50px; }
+
+  /* PAGE 3 */
+  #page3 > p { font-size: 6vw; width: 90%; line-height: 7vw; }
+  #page3 #colon1, #page3 #colon2 { height: 40px; }
+
+  /* PAGE 4 */
+  #page4 {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 20px 0;
+  }
+  .elem { width: 90%; height: 200px; }
+  .elem h2 { font-size: 6vw; }
+  .elem img { height: 100%; }
+  #page4 h1 { font-size: 12vw; top: 0; text-align: center; position: relative; }
+
+  /* FOOTER */
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+  }
+  #footer > img { display: none; }
+  #f2 h3, #f3 h3 { font-size: 4vw; text-align: center; }
+  #f4 h4 { font-size: 3.5vw; text-align: center; line-height: 5vw; }
+}
+
+@media screen and (max-width: 480px) {
+  #page1 h1 { font-size: 18vw; }
+  #page1 h2 { font-size: 6vw; }
+  #page1 p { font-size: 4vw; }
+  .overlay h4 { font-size: 6vw; }
+  .overlay p { font-size: 3.5vw; }
+  #green-div h4 { font-size: 5vw; line-height: 6vw; }
+  #page3 > p { font-size: 8vw; line-height: 9vw; }
+  .elem h2 { font-size: 8vw; }
+  #page4 h1 { font-size: 14vw; }
+}
